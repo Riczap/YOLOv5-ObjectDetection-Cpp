@@ -132,9 +132,9 @@ int main(int argc, char** argv)
 
     //Loading classes
     std::vector<std::string> class_list = load_class_list();
-    
+
     //Loading Image
-    cv::Mat image = cv::imread("example.png");
+    cv::Mat frame = cv::imread("example.jpg"); //Path to image
 
     //Detecting if cuda is available and loading Onnx model using OpenCV
     bool is_cuda = argc > 1 && strcmp(argv[1], "cuda") == 0;
@@ -143,8 +143,8 @@ int main(int argc, char** argv)
 
     std::vector<Detection> output;
     std::cout << output.size() << std::endl;
-    
-    
+
+
 
     //Object detection
     detect(frame, net, output, class_list);
@@ -168,4 +168,3 @@ int main(int argc, char** argv)
     cv::waitKey(0);
 
     return 0;
-}
