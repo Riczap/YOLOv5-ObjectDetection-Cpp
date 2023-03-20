@@ -1,4 +1,4 @@
-## yolov5-cpp
+## Running inference with YOLOV5, Onnx and OpenCV on C++
 # Exporting the YOLOV5 model as .onnx
 If you want to train and export your own custom onnx model you can follow the steps that are set up in the following Google Colab: https://colab.research.google.com/drive/19kVzBERhRwB1jywcKeJ3dALARNd5-dR7?usp=sharing
 
