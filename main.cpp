@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <windows.h>
 #include <opencv2/opencv.hpp>
-
+#include <vector>
 
 //OBJECT DETECTION
 std::vector<std::string> load_class_list()
